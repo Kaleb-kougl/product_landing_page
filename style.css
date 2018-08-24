@@ -1,5 +1,11 @@
+:root {
+    --main-color: rgb(247, 186, 196);
+    --off-color: rgb(249, 207, 214);
+}
+
 body {
     margin: 0;
+    background: url(https://i.imgur.com/8sn5GzG.png);
 }
 
 header {
@@ -7,23 +13,58 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: pink;
+    background-color: var(--main-color);
 }
 
 header > img {
-    height: 50px;
+    height: 45px;
     width: auto;
     float: right;
 }
 
-nav-link {
+.nav-link {
     float: right;
     display: block;
     text-align: center;
     padding: 15px;
     text-decoration: none;
+    color: black;
+}
+
+nav-link:hover {
+    background-color: var(--off-color);
 }
 
 main {
     margin-top: 65px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+#email {
+    width: 20%;
+}
+
+#flexbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item > img {
+    width: 12%;
+    height: auto;
 }
