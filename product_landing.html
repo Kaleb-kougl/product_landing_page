@@ -12,6 +12,7 @@
         <meta name="description" content="Happy Froot's Banana Slicer product page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        
     </head>
 
     <body>
@@ -36,15 +37,16 @@
                 <div class="intro">
 
                     <h1>Fruit will Never be the same</h1>
-
-                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST" target="_blank">
-                    
-                        <input type="email" id="email" placeholder="Enter your email address" requried>
+                    <div id="form-container">
+                        <p>Get Notified for Discounts and Our Newest Tech!</p>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST" target="_blank">
                         
-                        <button type="submit" class="btn btn-warning">Get Started</button>
+                            <input type="email" id="email" placeholder="Enter your email address" requried>
+                            
+                            <button type="submit" class="btn">Get Started</button>
 
-                    </form>
-
+                        </form>
+                    </div>
                 </div>
                 
             </div>
@@ -80,9 +82,9 @@
                     <div class="description flex-item-2">Great stuff goes here</div>
 
                 </div>
-
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/lW7t9G1Ozdg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                <div id="video-container">
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/lW7t9G1Ozdg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </body>

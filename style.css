@@ -31,6 +31,10 @@ header > * {
     font-size: 17px;
 }
 
+.nav-link:hover{
+    background-color: var(--off-color);
+}
+
 header > img {
     height: 25px;
     padding: 12px 16px;
@@ -55,9 +59,41 @@ header > img {
 }
 
 .intro {
-    margin-top: 45px;
-    text-align: center;
+    display: grid;
+    grid-template-rows: 2.3fr 1fr 1fr 1fr;
+    justify-items: center;
+    /* background-color: var(--main-color); */
+}
+
+.intro > h1 {
+    grid-row: 2 / 3;
+    /* border: 1px solid blue; */
     color: white;
+}
+
+#form-container {
+    grid-row: 3 / 4;
+    /* border: 1px solid red; */
+    background-color: var(--main-color);
+    width: 80%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#form {
+    padding: 10px;
+}
+
+.btn {
+    font-size: 1em;
+    background-color: rgb(249, 217, 117);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10%;
+}
+
+.btn:hover {
+    background-color: rgb(246, 200, 97);
 }
 
 #flexbox-container {
@@ -79,17 +115,15 @@ header > img {
     width: auto;
 }
 
-/* delete when finished */
 .flex-item > h3 {
-    /* border: 1px solid blue; */
     text-align: center;
-}
-/* delete when finished  */
-.flex-item > div {
-    /* border: 1px solid red; */
 }
 
 .flex-item-2 {
     flex-basis: 33%;
     align-self: center;
+}
+
+#video-container {
+    text-align: center;
 }
