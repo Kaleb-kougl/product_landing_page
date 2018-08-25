@@ -50,8 +50,6 @@ header > img {
     background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url("./bananas-3413.jpg");
     background-size: cover;
     background-repeat: repeat;
-    /* background-repeat: no-repeat; */
-    /* background-position: center center; */
     background-attachment: fixed;
     min-height: 700px;
 }
@@ -63,10 +61,10 @@ header > img {
 }
 
 #flexbox-container {
-     
     display: flex;
     flex-direction: column;
     margin: -10px;
+    background-color: var(--main-color);
 }
 
 .flex-item {
@@ -76,17 +74,22 @@ header > img {
     margin: 10px;
 }
 
+.flex-item > img {
+    max-height: 100px;
+    width: auto;
+}
+
 /* delete when finished */
 .flex-item > h3 {
-    border: 1px solid blue;
-    text-align: end;
+    /* border: 1px solid blue; */
+    text-align: center;
 }
 /* delete when finished  */
 .flex-item > div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .flex-item-2 {
-    flex-basis: 50%;
-    margin: 10px;
+    flex-basis: 33%;
+    align-self: center;
 }
