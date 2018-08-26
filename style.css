@@ -10,8 +10,12 @@ html, body {
 }
 
 body {
-    background: #EBEBEB;
     color: #121212;
+    width: 100%;
+    background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url("./bananas-3413.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 .navbar{
     overflow: hidden;
@@ -48,21 +52,16 @@ header > img {
     font-family: var(--main-font);
 }
 
-.container {
+.main-container {
     left: 0em;
     top: 25px;
     width: 100%;
     height: 100%;
 }
 
-.container2 {
+.intro-container {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url("./bananas-3413.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    min-height: 700px;
 }
 
 .intro {
@@ -143,4 +142,39 @@ header > img {
 
 #video-container {
     text-align: center;
+    margin: 10px 10px 30px 10px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 50px 20px 0px 20px;
+    border: 1px solid black;
+    background-color: rgb(249, 217, 117);
+    text-align: center;
+}
+
+.product > img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: 0% 0% 0% 0%;
+}
+
+.slicer-description {
+    margin: 0;
+    background-color: rgb(249, 217, 117);
+}
+
+.slicer-description > h3 {
+    font-family: var(--main-font);
+    margin: -4px 0 0 0;
+}
+
+.slicer-description > hr {
+    border-color: var(--main-color);
+    margin: 0 0 15px 0;
 }
