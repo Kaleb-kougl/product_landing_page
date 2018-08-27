@@ -17,6 +17,7 @@ body {
     background-repeat: repeat;
     background-attachment: fixed;
 }
+
 .navbar{
     overflow: hidden;
     background-color: var(--main-color);
@@ -26,7 +27,7 @@ body {
     z-index: 1;
 }
 
-header > * {
+.navbar > * {
     float: right;
     display: block;
     text-align: center;
@@ -40,7 +41,7 @@ header > * {
     background-color: var(--off-color);
 }
 
-header > img {
+.navbar > img {
     height: 25px;
     padding: 11px 0px 12px 16px;
     width: auto;
@@ -177,4 +178,21 @@ header > img {
 .slicer-description > hr {
     border-color: var(--main-color);
     margin: 0 0 15px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .intro > h1 {
+        grid-row: 1 / 2;
+        font-size: 2em;
+        align-self: end;
+    }
+
+    #form-container {
+        grid-row: 2 / 3;
+        align-self: end;
+    }
 }
